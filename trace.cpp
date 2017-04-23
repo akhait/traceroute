@@ -38,8 +38,8 @@ int main(int argc, char **argv) {
 	    if ((sendPing(UDPsock, conn)) == -1)
 			return -1;
 		//Get time
-		double from = (time.tv_sec*1000.0) + (time.tv_usec/1000.0);
 		gettimeofday(&time, NULL);
+		double from = (time.tv_sec*1000.0) + (time.tv_usec/1000.0);
 		//Wait for reponse
 		pollfd readset;
    		readset.fd = UDPsock;
