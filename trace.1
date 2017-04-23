@@ -1,0 +1,18 @@
+.\" Manpage for Traceroute.
+.\" Author: xkhait00@stud.fit.vutbr.cz
+.TH trace 1
+.SH TRACE
+TRACE \- Traceroute implementention that uses UDP sockets. IPv4/IPv6 IP addresses are supported
+.SH SYNOPSIS
+TRACE [-f first_ttl] [-m max_ttl] HOST
+.SH DESCRIPTION
+-f first_ttl        ttl for first packet, optional
+.br
+-m max_ttl          maximal ttl, optional
+.br
+HOST               IPv4/IPv6/ name of the target
+.RE
+.SH BUGS
+First response time is always an invalid number.
+.SH AUTHOR
+Anna Khaitovich (xkhait00@stud.fit.vutbr.cz)
